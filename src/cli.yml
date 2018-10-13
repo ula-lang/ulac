@@ -1,0 +1,33 @@
+name: ula
+version: "0.1"
+about: the ula compiler
+
+settings:
+    - ArgRequiredElseHelp
+
+subcommands:
+  - build:
+      about: Builds a file or directry
+      args:
+        - in:
+            index: 1
+            help: Input file / directory
+            required: true
+        - out:
+            index: 2
+            help: Output file / directory
+            required: true
+  - watch:
+      about: Watches a file or directory for changes
+      args:
+        - dir:
+            short: d
+            help: Build the entire directory
+        - in:
+            index: 1
+            help: Input file
+            required: true
+        - out:
+            index: 2
+            help: Output file
+            required: true

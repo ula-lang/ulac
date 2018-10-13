@@ -1,0 +1,10 @@
+[package]
+name = "ulac"
+version = "0.1.0"
+authors = ["Josh <josh@exasrc.com>"]
+
+[dependencies]
+clap = { version = "2.32", features = ["yaml"] }
+rayon = "1.0"
+ula = { path = "../ula" }
+walkdir = "2.0"
